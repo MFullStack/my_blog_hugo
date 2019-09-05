@@ -8,7 +8,12 @@
       <div class="post animated fadeInDown">
         <div class="post_title post_detail_title">
           <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
-          <span class="date">{{ .Date.Format "2006.01.02" }}</span>
+          <div>
+            <span class="date"><i class="remixicon-calendar-line"></i>{{ .Date.Format " 2006.01.02 " }}</span>&nbsp;
+            <span class="date"><i class="remixicon-file-word-line"></i> 约 {{.WordCount}} 字</span>&nbsp;
+            <span class="date"><i class="remixicon-time-line"></i> 预计 {{.ReadingTime}} 分钟</span>&nbsp;
+            <span class="date" id="busuanzi_container_site_pv"><i class="remixicon-eye-line"></i><span id="busuanzi_value_page_pv"></span>次</span>
+          </div>
         </div>
         <div class="post_content markdown">{{ .Content }}</div>
         <div class="post_footer">

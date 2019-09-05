@@ -56,9 +56,9 @@ disqusShortname = ""                 # your discuss shortname
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 [params.valine]
-  enable = false
-  appId = ""
-  appKey = ""
+  enable = true
+  appId = "u6HUg3W8XiMFAMAPjLISmL92-gzGzoHsz"
+  appKey = "qWSVwkAgpVTK2nsKLJtpqnlo"
   placeholder = " "
   visitor = true
 
@@ -70,3 +70,5 @@ disqusShortname = ""                 # your discuss shortname
   category = "categories"
   tag = "tags"
 
+[params.counter.busuanzi]
+  enable = true
