@@ -1,3 +1,3 @@
 Blog by Moweiwei
 
-publish with Hugo
+Publish with Hugo
