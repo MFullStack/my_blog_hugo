@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.moweiwei.com/about/about/</loc>
+    <loc>/about/about/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/posts/kubernetes/</loc>
+    <loc>/posts/kubernetes/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/tags/kubernetes/</loc>
+    <loc>/tags/kubernetes/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/</loc>
+    <loc>/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.moweiwei.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</loc>
+    <loc>/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
