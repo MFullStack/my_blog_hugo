@@ -3,36 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://moweiwei.com/tags/kubernetes/</loc>
-    <lastmod>2019-09-04T22:55:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://moweiwei.com/</loc>
-    <lastmod>2019-09-04T22:55:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://moweiwei.com/posts/</loc>
-    <lastmod>2019-09-04T22:55:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://moweiwei.com/tags/</loc>
-    <lastmod>2019-09-04T22:55:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://moweiwei.com/posts/test1/</loc>
-    <lastmod>2019-09-04T22:55:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://moweiwei.com/posts/test/</loc>
-    <lastmod>2019-09-04T22:53:58+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://moweiwei.com/about/about/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
@@ -49,6 +19,26 @@
   
   <url>
     <loc>http://moweiwei.com/posts/kubernetes/</loc>
+    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://moweiwei.com/tags/kubernetes/</loc>
+    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://moweiwei.com/</loc>
+    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://moweiwei.com/posts/</loc>
+    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://moweiwei.com/tags/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
