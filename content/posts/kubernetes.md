@@ -28,7 +28,7 @@ description: ""
  - 批量执行
  - 水平伸缩
 
- # Kubernetes 的架构
+ ## Kubernetes 的架构
 
  - 典型的二层架构 Server-Client 架构
 
