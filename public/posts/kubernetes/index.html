@@ -131,7 +131,7 @@
 <ul>
 <li><p>典型的二层架构 Server-Client 架构</p></li>
 
-<li><p><img src="../images/k8s_structure.png" alt="k8s" /></p></li>
+<li><p><img src="/img/k8s_structure.png" alt="k8s" /></p></li>
 </ul>
 
 <p>UI 和 CLI 命令只会与 Master 进行连接，Master 下发给 Node 节点。</p>
@@ -146,7 +146,7 @@
 <li>etcd: 分布式存储系统，API Server 需要的元信息放在 etcd 中。etcd 本身也是一个高可用系统，通过 etcd 保证整个 Master 组件的高可用性</li>
 </ul></li>
 
-<li><p><img src="../images/master.png" alt="master" /></p></li>
+<li><p><img src="/img/master.png" alt="master" /></p></li>
 
 <li><p>Node:包含 kubelet、Container Runtime、Storage Plugin、 Network Plugin、kube-proxy 几个主要组件</p>
 
@@ -157,17 +157,14 @@
 <li>Kube-proxy 是完成 Service 组网的组件</li>
 </ul></li>
 
-<li><p><img src="../images/node.png" alt="master" /></p></li>
+<li><p><img src="/img/node.png" alt="master" /></p></li>
 </ul>
 
 <p>## pod 调度过程中组件如何进行交互例子</p>
 
 <ul>
-<li><img src="../images/pod_progress.png" alt="master" /></li>
+<li><img src="/img/pod_progress.png" alt="master" /></li>
 </ul>
-
-<p>~/Workspace/src/github.com/MFullStack/blog_bake/content/posts/kubernetes.md   CWD: /Users/apple/Workspace/src/github.com/MFullStack/blog_bake/content/posts   Line: 1  Column: 1
-&quot;kubernetes.md&quot; [noeol] 119L, 4028C</p>
 </div>
         <div class="post_footer">
           

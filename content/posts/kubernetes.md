@@ -32,7 +32,7 @@ description: ""
 
  - 典型的二层架构 Server-Client 架构
 
- - ![k8s](../images/k8s_structure.png)
+ - ![k8s](/img/k8s_structure.png)
 
  UI 和 CLI 命令只会与 Master 进行连接，Master 下发给 Node 节点。
 
@@ -42,7 +42,7 @@ description: ""
    - Scheduler: 完成调度操作
    - etcd: 分布式存储系统，API Server 需要的元信息放在 etcd 中。etcd 本身也是一个高可用系统，通过 etcd 保证整个 Master 组件的高可用性
 
- - ![master](../images/master.png)
+ - ![master](/img/master.png)
 
  - Node:包含 kubelet、Container Runtime、Storage Plugin、 Network Plugin、kube-proxy 几个主要组件
    - Node 是真正运行业务负载的,每个业务负载以 pod 形式运行，一个 pod 中运行一个或多个容器
@@ -50,11 +50,8 @@ description: ""
    - pod 也需要对存储和网络进行管理，通过 Storage Plugin 和 Network Plugin 进行操作
    - Kube-proxy 是完成 Service 组网的组件
 
- - ![master](../images/node.png)
+ - ![master](/img/node.png)
 
  ## pod 调度过程中组件如何进行交互例子
 
- - ![master](../images/pod_progress.png)
-
- ~/Workspace/src/github.com/MFullStack/blog_bake/content/posts/kubernetes.md   CWD: /Users/apple/Workspace/src/github.com/MFullStack/blog_bake/content/posts   Line: 1  Column: 1
-"kubernetes.md" [noeol] 119L, 4028C
+ - ![master](/img/pod_progress.png)
