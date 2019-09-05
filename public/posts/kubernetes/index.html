@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+  <meta name="author"
+        content="Zeuk"/>
+
+  
+  <meta name="description" content="# 什么是 Kubernetes 自动化的容器编排平台 部署 弹性 管理 核心功能： 服务的发现与负载均衡 容器的自动装箱 存储的编排 自动容器恢复 自动发布与回滚 配置与密文的管理 批量执行 水平伸缩 # Kubernetes 的架构 典型的二层架构 Server-Client 架构 UI 和 CLI 命令只会与"/>
+  
+
+  
+  
+  <meta name="keywords" content="Hugo, theme, blog, moweiwei, mww"/>
+  
+
+  
+  <link rel="canonical" href="http://moweiwei.com/posts/kubernetes/"/>
+
+  
+
+  <title>Kubernetes &middot; Never Give Up</title>
+
+  <link rel="shortcut icon" href="http://moweiwei.com/images/favicon.ico"/>
+  <link rel="stylesheet" href="http://moweiwei.com/css/animate.min.css"/>
+  <link rel="stylesheet" href="http://moweiwei.com/css/remixicon.css"/>
+  <link rel="stylesheet" href="http://moweiwei.com/css/zozo.css"/>
+  <link rel="stylesheet" href="http://moweiwei.com/css/highlight.css"/>
+
+  
+  
+</head>
+
+<body>
+<div class="main animated">
+  <div class="nav_container animated fadeInDown">
+  <div class="site_nav" id="site_nav">
+    <ul>
+      
+      <li>
+        <a href="/">首页</a>
+      </li>
+      
+      <li>
+        <a href="/posts/">归档</a>
+      </li>
+      
+      <li>
+        <a href="/tags/">标签</a>
+      </li>
+      
+      <li>
+        <a href="/categories/">分类</a>
+      </li>
+      
+      <li>
+        <a href="/about/about">关于</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="menu_icon">
+    <a id="menu_icon"><i class="remixicon-links-line"></i></a>
+  </div>
+</div>
+
+  <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="http://moweiwei.com">
+          <span>Never Give Up</span>
+          <img src="http://moweiwei.com/images/logo.svg"/>
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title"></p>
+      <div class="my_socials">
+        
+        
+        <a href="https://github.com/MFullStack?tab=repositories" title="github" target="_blank"><i class="remixicon-github-fill"></i></a>
+        
+        
+        
+        <a href="https://www.instagram.com/weiwei.mo.24/" title="instagram" target="_blank"><i class="remixicon-instagram-fill"></i></a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated fadeInDown">
+        <div class="post_title post_detail_title">
+          <h2><a href='/posts/kubernetes/'>Kubernetes</a></h2>
+          <span class="date">2019.09.04</span>
+        </div>
+        <div class="post_content markdown"><p># 什么是 Kubernetes</p>
+
+<p>自动化的容器编排平台</p>
+
+<ul>
+<li>部署</li>
+<li>弹性</li>
+<li>管理</li>
+</ul>
+
+<p>核心功能：</p>
+
+<ul>
+<li>服务的发现与负载均衡</li>
+<li>容器的自动装箱</li>
+<li>存储的编排</li>
+<li>自动容器恢复</li>
+<li>自动发布与回滚</li>
+<li>配置与密文的管理</li>
+<li>批量执行</li>
+<li>水平伸缩</li>
+</ul>
+
+<p># Kubernetes 的架构</p>
+
+<ul>
+<li><p>典型的二层架构 Server-Client 架构</p></li>
+
+<li><p><img src="../images/k8s_structure.png" alt="k8s" /></p></li>
+</ul>
+
+<p>UI 和 CLI 命令只会与 Master 进行连接，Master 下发给 Node 节点。</p>
+
+<ul>
+<li><p>Master 包含 4 个主要的组件：</p>
+
+<ul>
+<li>API Server :k8s 中所有的组件都与 API Server 进行连接，组件与组件之间一般不进行独立连接</li>
+<li>Controller: 对集群状态进行管理，如自动修复、自动水平扩张</li>
+<li>Scheduler: 完成调度操作</li>
+<li>etcd: 分布式存储系统，API Server 需要的元信息放在 etcd 中。etcd 本身也是一个高可用系统，通过 etcd 保证整个 Master 组件的高可用性</li>
+</ul></li>
+
+<li><p><img src="../images/master.png" alt="master" /></p></li>
+
+<li><p>Node:包含 kubelet、Container Runtime、Storage Plugin、 Network Plugin、kube-proxy 几个主要组件</p>
+
+<ul>
+<li>Node 是真正运行业务负载的,每个业务负载以 pod 形式运行，一个 pod 中运行一个或多个容器</li>
+<li>真正运行 pod 的组件是 Kubelet，通过 API Server 接收到 pod 运行的状态，然后提交到 Container Runtime 组件中，在 OS 装创建 pod 运行环境，将 pod 运行起来</li>
+<li>pod 也需要对存储和网络进行管理，通过 Storage Plugin 和 Network Plugin 进行操作</li>
+<li>Kube-proxy 是完成 Service 组网的组件</li>
+</ul></li>
+
+<li><p><img src="../images/node.png" alt="master" /></p></li>
+</ul>
+
+<p>## pod 调度过程中组件如何进行交互例子</p>
+
+<ul>
+<li><img src="../images/pod_progress.png" alt="master" /></li>
+</ul>
+
+<p>~/Workspace/src/github.com/MFullStack/blog_bake/content/posts/kubernetes.md   CWD: /Users/apple/Workspace/src/github.com/MFullStack/blog_bake/content/posts   Line: 1  Column: 1
+&quot;kubernetes.md&quot; [noeol] 119L, 4028C</p>
+</div>
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="http://moweiwei.com/tags/kubernetes/">kubernetes</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+<footer class="footer">
+  <div class="powered_by">
+    <a href="https://moweiwei.com">Author by MWW,</a>
+    <a href="http://www.gohugo.io/">Published with Hugo</a>
+  </div>
+</footer>
+
+
+
+<script src="http://moweiwei.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://moweiwei.com/js/zozo.js"></script>
+<script src="http://moweiwei.com/js/highlight.pack.js"></script>
+<link  href="http://moweiwei.com/css/fancybox.min.css" rel="stylesheet">
+<script src="http://moweiwei.com/js/fancybox.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+  <script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+
+
+
+
+</body>
+</html>

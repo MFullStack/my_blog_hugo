@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>‘云原生笔记’ on Never Give Up</title>
+    <link>http://moweiwei.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in ‘云原生笔记’ on Never Give Up</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 04 Sep 2019 09:20:20 +0800</lastBuildDate>
+    
+	<atom:link href="http://moweiwei.com/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://moweiwei.com/posts/kubernetes/</link>
+      <pubDate>Wed, 04 Sep 2019 09:20:20 +0800</pubDate>
+      
+      <guid>http://moweiwei.com/posts/kubernetes/</guid>
+      <description># 什么是 Kubernetes 自动化的容器编排平台 部署 弹性 管理 核心功能： 服务的发现与负载均衡 容器的自动装箱 存储的编排 自动容器恢复 自动发布与回滚 配置与密文的管理 批量执行 水平伸缩 # Kubernetes 的架构 典型的二层架构 Server-Client 架构 UI 和 CLI 命令只会与</description>
+    </item>
+    
+  </channel>
+</rss>
