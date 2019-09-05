@@ -57,8 +57,8 @@ disqusShortname = ""                 # your discuss shortname
 # more info please open https://valine.js.org
 [params.valine]
   enable = false
-  appId = "u6HUg3W8XiMFAMAPjLISmL92-gzGzoHsz"
-  appKey = "qWSVwkAgpVTK2nsKLJtpqnlo"
+  appId = ""
+  appKey = ""
   placeholder = " "
   visitor = true
 
