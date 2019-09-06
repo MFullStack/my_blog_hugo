@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Never Give Up</title>
-    <link>http://moweiwei.com/tags/</link>
+    <link>http://118.24.78.115/tags/</link>
     <description>Recent content in Tags on Never Give Up</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 04 Sep 2019 09:20:20 +0800</lastBuildDate>
     
-	<atom:link href="http://moweiwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://118.24.78.115/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kubernetes</title>
-      <link>http://moweiwei.com/tags/kubernetes/</link>
+      <link>http://118.24.78.115/tags/kubernetes/</link>
       <pubDate>Wed, 04 Sep 2019 09:20:20 +0800</pubDate>
       
-      <guid>http://moweiwei.com/tags/kubernetes/</guid>
+      <guid>http://118.24.78.115/tags/kubernetes/</guid>
       <description></description>
     </item>
     
