@@ -17,7 +17,7 @@
       <pubDate>Sat, 07 Sep 2019 13:46:19 +0800</pubDate>
       
       <guid>http://118.24.78.115/posts/cloud_native/docker/</guid>
-      <description>什么是容器 容器，是一个视图隔离、资源可限制、独立的文件系统的进程的集合。 资源视图隔离-namespace --如能看见部分进程：独立的主机名等 控制资源使用率-cgroup --2G 内存；CPU 个数 独立的文件系统</description>
+      <description>一 、什么是容器 容器，是一个视图隔离、资源可限制、独立的文件系统的进程的集合。 资源视图隔离-namespace --如能看见部分进程：独立的主机名等 控制资源使用率-cgroup --2G 内存；CPU 个数 独立的文件</description>
     </item>
     
     <item>
