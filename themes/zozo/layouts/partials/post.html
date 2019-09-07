@@ -27,6 +27,14 @@
           {{ end }}
         </span>
         {{ end }}
+        {{ with .Params.categories }}
+        <span class="field tags">
+          <i class="remixicon-folder-2-line"></i>
+          {{ range . }}
+          <a href="{{ "categories" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
       </div>
     </div>
   </div>
