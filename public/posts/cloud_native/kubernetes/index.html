@@ -10,7 +10,7 @@
         content="Zeuk"/>
 
   
-  <meta name="description" content="Moweiwei moweiwei6@gmail.com 2019.10.01  Thanks For Reading!"/>
+  <meta name="description" content="什么是 Kubernetes 自动化的容器编排平台 部署 弹性 管理 核心功能： 服务的发现与负载均衡 容器的自动装箱 存储的编排 自动容器恢复 自动发布与回滚 配置与密文的管理 批量执行 水平伸缩 Kubernetes 的架构 典型的二层架构 Server-Client 架构 UI 和 CLI 命令只会与 Master 进"/>
   
 
   
@@ -19,11 +19,11 @@
   
 
   
-  <link rel="canonical" href="http://118.24.78.115/about/about/"/>
+  <link rel="canonical" href="http://118.24.78.115/posts/cloud_native/kubernetes/"/>
 
   
 
-  <title>About &middot; Never Give Up</title>
+  <title>课时 3 - Kubernetes 核心概念 &middot; Never Give Up</title>
 
   <link rel="shortcut icon" href="http://118.24.78.115/images/favicon.ico"/>
   <link rel="stylesheet" href="http://118.24.78.115/css/animate.min.css"/>
@@ -98,27 +98,108 @@
     <div class="post_page">
       <div class="post animated fadeInDown">
         <div class="post_title post_detail_title">
-          <h2><a href='/about/about/'>About</a></h2>
+          <h2><a href='/posts/cloud_native/kubernetes/'>课时 3 - Kubernetes 核心概念</a></h2>
           <div>
             <span class="date"><i class="remixicon-calendar-line"></i> 2019.09.04 </span>&nbsp;
-            <span class="date"><i class="remixicon-file-word-line"></i> 约 6 字</span>&nbsp;
+            <span class="date"><i class="remixicon-file-word-line"></i> 约 466 字</span>&nbsp;
             <span class="date"><i class="remixicon-time-line"></i> 预计 1 分钟</span>&nbsp;
             <span class="date" id="busuanzi_container_site_pv"><i class="remixicon-eye-line"></i>&nbsp;<span id="busuanzi_value_page_pv"></span> 次</span>
           </div>
           <div class="tag">
               
+              <div class="meta">
+                <div class="info">
+                  <span class="field tags">
+                    <i class="remixicon-bookmark-line"></i>
+                    
+                    <a href="http://118.24.78.115/tags/kubernetes/">kubernetes</a>
+                    
+                    <a href="http://118.24.78.115/tags/docker/">docker</a>
+                    
+                  </span>
+                </div>
+              </div>
+              
           </div>
           <div class="categories">
             
+            <div class="meta">
+              <div class="info">
+                <span class="field tags">
+                  <i class="remixicon-folder-2-line"></i>
+                  
+                  <a href="http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/">云原生笔记</a>
+                  
+                </span>
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div class="post_content markdown"><ul>
-<li>Moweiwei</li>
-<li>moweiwei6@gmail.com</li>
-<li>2019.10.01</li>
+        <div class="post_content markdown">
+
+<h2 id="什么是-kubernetes">什么是 Kubernetes</h2>
+
+<p>自动化的容器编排平台</p>
+
+<ul>
+<li>部署</li>
+<li>弹性</li>
+<li>管理</li>
 </ul>
 
-<p>Thanks For Reading!</p>
+<p>核心功能：</p>
+
+<ul>
+<li>服务的发现与负载均衡</li>
+<li>容器的自动装箱</li>
+<li>存储的编排</li>
+<li>自动容器恢复</li>
+<li>自动发布与回滚</li>
+<li>配置与密文的管理</li>
+<li>批量执行</li>
+<li>水平伸缩</li>
+</ul>
+
+<h2 id="kubernetes-的架构">Kubernetes 的架构</h2>
+
+<ul>
+<li>典型的二层架构 Server-Client 架构</li>
+</ul>
+
+<p><img src="/img/cloud_native/kubernetes/k8s_structure.png" alt="k8s" /></p>
+
+<p>UI 和 CLI 命令只会与 Master 进行连接，Master 下发给 Node 节点。</p>
+
+<ul>
+<li>Master 包含 4 个主要的组件：
+
+<ul>
+<li>API Server :k8s 中所有的组件都与 API Server 进行连接，组件与组件之间一般不进行独立连接</li>
+<li>Controller: 对集群状态进行管理，如自动修复、自动水平扩张</li>
+<li>Scheduler: 完成调度操作</li>
+<li>etcd: 分布式存储系统，API Server 需要的元信息放在 etcd 中。etcd 本身也是一个高可用系统，通过 etcd 保证整个 Master 组件的高可用性</li>
+</ul></li>
+</ul>
+
+<p><img src="/img/cloud_native/kubernetes/master.png" alt="master" /></p>
+
+<ul>
+<li>Node:包含 kubelet、Container Runtime、Storage Plugin、 Network Plugin、kube-proxy 几个主要组件
+
+<ul>
+<li>Node 是真正运行业务负载的,每个业务负载以 pod 形式运行，一个 pod 中运行一个或多个容器</li>
+<li>真正运行 pod 的组件是 Kubelet，通过 API Server 接收到 pod 运行的状态，然后提交到 Container Runtime 组件中，在 OS 装创建 pod 运行环境，将 pod 运行起来</li>
+<li>pod 也需要对存储和网络进行管理，通过 Storage Plugin 和 Network Plugin 进行操作</li>
+<li>Kube-proxy 是完成 Service 组网的组件</li>
+</ul></li>
+</ul>
+
+<p><img src="/img/cloud_native/kubernetes/node.png" alt="master" /></p>
+
+<h2 id="pod-调度过程中组件如何进行交互例子">pod 调度过程中组件如何进行交互例子</h2>
+
+<p><img src="/img/cloud_native/kubernetes/pod_progress.png" alt="master" /></p>
 </div>
         <div class="footer">
 

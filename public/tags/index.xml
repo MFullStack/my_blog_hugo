@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Never Give Up</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Sep 2019 09:20:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2019 13:46:19 +0800</lastBuildDate>
     
 	<atom:link href="http://118.24.78.115/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>container</title>
+      <link>http://118.24.78.115/tags/container/</link>
+      <pubDate>Sat, 07 Sep 2019 13:46:19 +0800</pubDate>
+      
+      <guid>http://118.24.78.115/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>http://118.24.78.115/tags/docker/</link>
-      <pubDate>Wed, 04 Sep 2019 09:20:20 +0800</pubDate>
+      <pubDate>Sat, 07 Sep 2019 13:46:19 +0800</pubDate>
       
       <guid>http://118.24.78.115/tags/docker/</guid>
       <description></description>

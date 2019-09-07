@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://118.24.78.115/categories/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/tags/container/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/tags/docker/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/posts/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/tags/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/posts/cloud_native/docker/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://118.24.78.115/about/about/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
@@ -13,42 +53,12 @@
   </url>
   
   <url>
-    <loc>http://118.24.78.115/categories/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/docker/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/kubernetes/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://118.24.78.115/tags/kubernetes/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://118.24.78.115/posts/cloud_native/kubernetes/</loc>
     <lastmod>2019-09-04T09:20:20+08:00</lastmod>
   </url>
   

@@ -72,3 +72,8 @@ disqusShortname = ""                 # your discuss shortname
 
 [params.counter.busuanzi]
   enable = true
+
+[highlighting]
+  pygmentsUseClassic       = true
+  pygmentsCodeFences       = true
+  pygmentsStyle            = "autumn"
