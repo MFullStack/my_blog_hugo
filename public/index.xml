@@ -6,18 +6,27 @@
     <description>Recent content on Never Give Up</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Sep 2019 21:19:27 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 14:02:57 +0800</lastBuildDate>
     
 	<atom:link href="http://118.24.78.115/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Container</title>
-      <link>http://118.24.78.115/posts/deep_analysis_k8s/container/</link>
-      <pubDate>Sat, 07 Sep 2019 21:19:27 +0800</pubDate>
+      <title>Proptypes</title>
+      <link>http://118.24.78.115/posts/react/proptypes/</link>
+      <pubDate>Thu, 12 Sep 2019 14:02:57 +0800</pubDate>
       
-      <guid>http://118.24.78.115/posts/deep_analysis_k8s/container/</guid>
-      <description>容器技术 一、进程 容器技术的核心功能，就是通过约束和修改进程的动态表现，从而其创造出一个“边界”。 Cgroups 技术是制造约束的主要手段 Namespace 技术是用来修改进程视图的主要方法 Namespace 进程机制：这种机制，就是对被隔离应用的进程</description>
+      <guid>http://118.24.78.115/posts/react/proptypes/</guid>
+      <description>有状态组件与无状态组件 props 类型检查 有状态组件 import React, { PureComponent } from &amp;quot;react&amp;quot;; import PropTypes from &amp;quot;prop-types&amp;quot;; export default class Comment extends PureComponent { static propTypes = { comment: PropTypes.object.isRequired }; render() { const { author, content } = this.props.comment; return ( &amp;lt;div className=&amp;quot;comment-item&amp;quot;&amp;gt; &amp;lt;span className=&amp;quot;avatar&amp;quot; /&amp;gt; &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;{author}&amp;lt;/a&amp;gt; &amp;lt;p&amp;gt;{content}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ); } } 无状态组件 import React from &amp;quot;react&amp;quot;; import PropTypes from &amp;quot;prop-types&amp;quot;; import CommentItem from &amp;quot;./CommentItem&amp;quot;; const CommentList = props =&amp;gt; { return ( &amp;lt;div className=&amp;quot;comment-list&amp;quot;&amp;gt; {props.comments.map(comment =&amp;gt; ( &amp;lt;CommentItem</description>
+    </item>
+    
+    <item>
+      <title>React Stateless Component</title>
+      <link>http://118.24.78.115/posts/react/react-stateless-component/</link>
+      <pubDate>Thu, 12 Sep 2019 10:47:29 +0800</pubDate>
+      
+      <guid>http://118.24.78.115/posts/react/react-stateless-component/</guid>
+      <description>无状态组件 无状态组件的三种写法 import React from &amp;quot;react&amp;quot;; // 方式 1 const MesssageList = props =&amp;gt; { return ( &amp;lt;ul&amp;gt; {props.messages.map(msg =&amp;gt; ( &amp;lt;li&amp;gt;{msg}&amp;lt;/li&amp;gt; ))} &amp;lt;/ul&amp;gt; ); }; // 方式 2 function MesssageList(props){ return ( &amp;lt;ul&amp;gt; {props.messages.map(msg =&amp;gt; ( &amp;lt;li&amp;gt;{msg}&amp;lt;/li&amp;gt; ))} &amp;lt;/ul&amp;gt; ); }; // 方式 3 class MesssageList extends React.PureComponent { render() { return ( &amp;lt;ul&amp;gt; {this.props.messages.map(msg =&amp;gt; ( &amp;lt;li&amp;gt;{msg}&amp;lt;/li&amp;gt; ))} &amp;lt;/ul&amp;gt; ); } } export class ChatApp extends React.Component { state = { messages: [], inputmsg: &amp;quot;&amp;quot; }; handleInput = e =&amp;gt; { this.setState({</description>
     </item>
     
     <item>

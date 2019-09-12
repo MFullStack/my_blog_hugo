@@ -2,7 +2,7 @@
 title: "Container"
 date: 2019-09-07T21:19:27+08:00
 hidden: false
-draft: false
+draft: true
 tags: []
 keywords: []
 categories: [深入剖析Kubernetes笔记]
@@ -99,5 +99,6 @@ Docker 使用的 rootfs 往往由多个“层”组成。
 1. 只读层：容器 rootfs 最下五层，挂载方式是只读（readOnly+whiteout）
 1. 读写层：容器 rootfs 最上一层，挂载方式rw（read write）
 1. init 层：在只读层和读写层之间，init 层是 Docker 项目单独生成的一个内部层，专门用来存放 /etc/hosts 等信息。
+
 
 

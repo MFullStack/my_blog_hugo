@@ -99,12 +99,12 @@
 
 <div class="post animated fadeInDown">
   <div class="post_title">
-    <h2><a href='/posts/deep_analysis_k8s/container/'>Container</a></h2>
+    <h2><a href='/posts/react/proptypes/'>Proptypes</a></h2>
   </div>
   
   <div class="list">
     <div class="post_content markdown">
-      <p>容器技术 一、进程 容器技术的核心功能，就是通过约束和修改进程的动态表现，从而其创造出一个“边界”。 Cgroups 技术是制造约束的主要手段 Namespace 技术是用来修改进程视图的主要方法 Namespace 进程机制：这种机制，就是对被隔离应用的进程......</p>
+      <p>有状态组件与无状态组件 props 类型检查 有状态组件 import React, { PureComponent } from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; export default class Comment extends PureComponent { static propTypes = { comment: PropTypes.object.isRequired }; render() { const { author, content } = this.props.comment; return ( &lt;div className=&quot;comment-item&quot;&gt; &lt;span className=&quot;avatar&quot; /&gt; &lt;a href=&quot;#&quot;&gt;{author}&lt;/a&gt; &lt;p&gt;{content}&lt;/p&gt; &lt;/div&gt; ); } } 无状态组件 import React from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; import CommentItem from &quot;./CommentItem&quot;; const CommentList = props =&gt; { return ( &lt;div className=&quot;comment-list&quot;&gt; {props.comments.map(comment =&gt; ( &lt;CommentItem......</p>
     </div>
   </div>
   
@@ -113,16 +113,52 @@
       <div class="info">
         <span class="field">
           <i class="remixicon-map-pin-time-line"></i>
-          <span class="date">2019.09.07</span>
+          <span class="date">2019.09.12</span>
         </span>
-        
         
         <span class="field tags">
-          <i class="remixicon-folder-2-line"></i>
+          <i class="remixicon-stack-line"></i>
           
-          <a href="http://118.24.78.115/categories/%E6%B7%B1%E5%85%A5%E5%89%96%E6%9E%90kubernetes%E7%AC%94%E8%AE%B0/">深入剖析Kubernetes笔记</a>
+          <a href="http://118.24.78.115/tags/react/">react</a>
+          
+          <a href="http://118.24.78.115/tags/proptypes/">proptypes</a>
           
         </span>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post animated fadeInDown">
+  <div class="post_title">
+    <h2><a href='/posts/react/react-stateless-component/'>React Stateless Component</a></h2>
+  </div>
+  
+  <div class="list">
+    <div class="post_content markdown">
+      <p>无状态组件 无状态组件的三种写法 import React from &quot;react&quot;; // 方式 1 const MesssageList = props =&gt; { return ( &lt;ul&gt; {props.messages.map(msg =&gt; ( &lt;li&gt;{msg}&lt;/li&gt; ))} &lt;/ul&gt; ); }; // 方式 2 function MesssageList(props){ return ( &lt;ul&gt; {props.messages.map(msg =&gt; ( &lt;li&gt;{msg}&lt;/li&gt; ))} &lt;/ul&gt; ); }; // 方式 3 class MesssageList extends React.PureComponent { render() { return ( &lt;ul&gt; {this.props.messages.map(msg =&gt; ( &lt;li&gt;{msg}&lt;/li&gt; ))} &lt;/ul&gt; ); } } export class ChatApp extends React.Component { state = { messages: [], inputmsg: &quot;&quot; }; handleInput = e =&gt; { this.setState({......</p>
+    </div>
+  </div>
+  
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">2019.09.12</span>
+        </span>
+        
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          
+          <a href="http://118.24.78.115/tags/react/">react</a>
+          
+          <a href="http://118.24.78.115/tags/%E6%97%A0%E7%8A%B6%E6%80%81%E7%BB%84%E4%BB%B6/">无状态组件</a>
+          
+        </span>
+        
         
       </div>
     </div>
@@ -234,6 +270,7 @@
 <link  href="http://118.24.78.115/css/fancybox.min.css" rel="stylesheet">
 <script src="http://118.24.78.115/js/fancybox.min.js"></script>
 <script async src="http://118.24.78.115/js/busuanzi.pure.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/css.min.js"></script>
 
 <script>hljs.initHighlightingOnLoad()</script>
 
