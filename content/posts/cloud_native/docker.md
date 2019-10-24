@@ -111,3 +111,7 @@ VM 利用 Hypervisor 虚拟化技术来模拟 CPU、内存等硬件资源，这�
 <div align="center">
   <img src="/img/cloud_native/docker/container_vm.png">
 </div>
+
+<div align="center">
+  <img src="/img/cloud_native/docker/logo.png">
+</div>

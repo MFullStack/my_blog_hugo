@@ -104,7 +104,7 @@
   
   <div class="list">
     <div class="post_content markdown">
-      <p>有状态组件与无状态组件 props 类型检查 有状态组件 import React, { PureComponent } from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; export default class Comment extends PureComponent { static propTypes = { comment: PropTypes.object.isRequired }; render() { const { author, content } = this.props.comment; return ( &lt;div className=&quot;comment-item&quot;&gt; &lt;span className=&quot;avatar&quot; /&gt; &lt;a href=&quot;#&quot;&gt;{author}&lt;/a&gt; &lt;p&gt;{content}&lt;/p&gt; &lt;/div&gt; ); } } 无状态组件 import React from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; import CommentItem from &quot;./CommentItem&quot;; const CommentList = props =&gt; { return ( &lt;div className=&quot;comment-list&quot;&gt; {props.comments.map(comment =&gt; ( &lt;CommentItem......</p>
+      <p>有状态组件与无状态组件 props 类型检查 有状态组件 import React, { PureComponent } from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; export default class Comment extends PureComponent { static propTypes = { comment: PropTypes.object.isRequired }; static defaultProps = { comment: [] } render() { const { author, content } = this.props.comment; return ( &lt;div className=&quot;comment-item&quot;&gt; &lt;span className=&quot;avatar&quot; /&gt; &lt;a href=&quot;#&quot;&gt;{author}&lt;/a&gt; &lt;p&gt;{content}&lt;/p&gt; &lt;/div&gt; ); } } 无状态组件 import React from &quot;react&quot;; import PropTypes from &quot;prop-types&quot;; import CommentItem from &quot;./CommentItem&quot;; const CommentList = props =&gt; { return......</p>
     </div>
   </div>
   
@@ -266,11 +266,16 @@
 
 <script src="http://118.24.78.115/js/jquery-3.3.1.min.js"></script>
 <script src="http://118.24.78.115/js/zozo.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
 <script src="http://118.24.78.115/js/highlight.pack.js"></script>
 <link  href="http://118.24.78.115/css/fancybox.min.css" rel="stylesheet">
 <script src="http://118.24.78.115/js/fancybox.min.js"></script>
 <script async src="http://118.24.78.115/js/busuanzi.pure.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/css.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/javascript.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/less.min.js"></script>
+
 
 <script>hljs.initHighlightingOnLoad()</script>
 

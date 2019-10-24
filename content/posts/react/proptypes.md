@@ -21,6 +21,9 @@ export default class Comment extends PureComponent {
   static propTypes = {
     comment: PropTypes.object.isRequired
   };
+  static defaultProps = {
+    comment: []
+  }
 
   render() {
     const { author, content } = this.props.comment;
@@ -55,6 +58,8 @@ const CommentList = props => {
 CommentList.protoTypes = {
   comments: PropTypes.object.isRequired
 };
-
+CommentList.defaultProps = {
+  comment: []
+}
 export default CommentList;
 ```

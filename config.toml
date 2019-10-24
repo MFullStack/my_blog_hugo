@@ -75,4 +75,4 @@ disqusShortname = ""                 # your discuss shortname
 [highlighting]
   pygmentsUseClassic       = true
   pygmentsCodeFences       = true
-  pygmentsStyle            = "autumn"
+  pygmentsStyle            = "monokai"
