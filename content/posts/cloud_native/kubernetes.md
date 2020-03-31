@@ -56,6 +56,6 @@ UI 和 CLI 命令只会与 Master 进行连接，Master 下发给 Node 节点。
 
 ![master](/img/cloud_native/kubernetes/pod_progress.png)
 
-![master](/img/test/logo1.png)
+![master](/img/test/logo.png)
 ![master](/img/test/logo2.png)
 
