@@ -63,7 +63,7 @@ disqusShortname = ""                 # your discuss shortname
   visitor = true
 
 [social]
-  github = "https://github.com/MFullStack?tab=repositories"
+  github = "https://github.com/moweiwei?tab=repositories"
 
 [taxonomies]
   category = "categories"

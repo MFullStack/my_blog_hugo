@@ -3,46 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://118.24.78.115/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/react/proptypes/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/proptypes/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/react/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/</loc>
-    <lastmod>2019-09-12T14:02:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/react/react-stateless-component/</loc>
-    <lastmod>2019-09-12T10:47:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/tags/%E6%97%A0%E7%8A%B6%E6%80%81%E7%BB%84%E4%BB%B6/</loc>
-    <lastmod>2019-09-12T10:47:29+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://118.24.78.115/categories/</loc>
     <lastmod>2019-09-07T13:46:19+08:00</lastmod>
   </url>
@@ -54,6 +14,21 @@
   
   <url>
     <loc>http://118.24.78.115/tags/docker/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/posts/</loc>
+    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://118.24.78.115/tags/</loc>
     <lastmod>2019-09-07T13:46:19+08:00</lastmod>
   </url>
   
