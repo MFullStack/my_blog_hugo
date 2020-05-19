@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Never Give Up</title>
-    <link>http://118.24.78.115/categories/</link>
-    <description>Recent content in Categories on Never Give Up</description>
+    <title>Categories on Moweiwei Blog</title>
+    <link>https://moweiwei.com/categories/</link>
+    <description>Recent content in Categories on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Sep 2019 13:46:19 +0800</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://118.24.78.115/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://moweiwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>云原生笔记</title>
-      <link>http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sat, 07 Sep 2019 13:46:19 +0800</pubDate>
+      <title>LIFE</title>
+      <link>https://moweiwei.com/categories/life/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://moweiwei.com/categories/life/</guid>
       <description></description>
     </item>
     

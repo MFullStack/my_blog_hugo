@@ -3,63 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://118.24.78.115/categories/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/categories/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/tags/container/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/categories/life/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/tags/docker/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/post/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/posts/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/2017/11/03/hello-world/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/tags/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/search/placeholder/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/categories/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/top/about/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/posts/cloud_native/docker/</loc>
-    <lastmod>2019-09-07T13:46:19+08:00</lastmod>
+    <loc>https://moweiwei.com/top/books/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/about/about/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+    <loc>https://moweiwei.com/search/</loc>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/about/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+    <loc>https://moweiwei.com/tags/</loc>
   </url>
   
   <url>
-    <loc>http://118.24.78.115/tags/kubernetes/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://118.24.78.115/posts/cloud_native/kubernetes/</loc>
-    <lastmod>2019-09-04T09:20:20+08:00</lastmod>
+    <loc>https://moweiwei.com/top/</loc>
   </url>
   
 </urlset>

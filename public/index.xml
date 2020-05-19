@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Never Give Up</title>
-    <link>http://118.24.78.115/</link>
-    <description>Recent content on Never Give Up</description>
+    <title>Moweiwei Blog</title>
+    <link>https://moweiwei.com/</link>
+    <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Sep 2019 13:46:19 +0800</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://118.24.78.115/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>课时 2 - Docker</title>
-      <link>http://118.24.78.115/posts/cloud_native/docker/</link>
-      <pubDate>Sat, 07 Sep 2019 13:46:19 +0800</pubDate>
+      <title>Welcome to Moweiwei Blog</title>
+      <link>https://moweiwei.com/2017/11/03/hello-world/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/posts/cloud_native/docker/</guid>
-      <description>一 、什么是容器 容器，是一个视图隔离、资源可限制、独立的文件系统的进程的集合。 资源视图隔离-namespace --如能看见部分进程：独立的主机名等 控制资源使用率-cgroup --2G 内存；CPU 个数 独立的文件</description>
+      <guid>https://moweiwei.com/2017/11/03/hello-world/</guid>
+      <description>“Yeah It&amp;rsquo;s on. ” Hello World!</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>http://118.24.78.115/about/about/</link>
-      <pubDate>Wed, 04 Sep 2019 09:20:20 +0800</pubDate>
+      <title></title>
+      <link>https://moweiwei.com/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/about/about/</guid>
-      <description>Moweiwei moweiwei6@gmail.com 2019.10.01  Thanks For Reading!</description>
+      <guid>https://moweiwei.com/search/placeholder/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>课时 3 - Kubernetes 核心概念</title>
-      <link>http://118.24.78.115/posts/cloud_native/kubernetes/</link>
-      <pubDate>Wed, 04 Sep 2019 09:20:20 +0800</pubDate>
+      <title></title>
+      <link>https://moweiwei.com/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/posts/cloud_native/kubernetes/</guid>
-      <description>什么是 Kubernetes 自动化的容器编排平台 部署 弹性 管理 核心功能： 服务的发现与负载均衡 容器的自动装箱 存储的编排 自动容器恢复 自动发布与回滚 配置与密文的管理 批量执行 水平伸缩 Kubernetes 的架构 典型的二层架构 Server-Client 架构 UI 和 CLI 命令只会与 Master 进</description>
+      <guid>https://moweiwei.com/top/about/</guid>
+      <description>Mo Weiwei is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years.
+Throughout his career, he has built a number of large-scale, cross-country OSS/BSS platforms/systems and operation tools, most of them are still running in productions.
+He loves open source and has been contributing to a variety of open source projects, including Istio(Service Mesh https://istio.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://moweiwei.com/top/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://moweiwei.com/top/books/</guid>
+      <description>Machine learning学习笔记 Coursera 在线课程 Machine learning 笔记 讲师: 吴恩达(Andrew Ng)  课程地址：https://www.coursera.org/learn/machine-learning</description>
     </item>
     
   </channel>
