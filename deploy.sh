@@ -18,5 +18,5 @@ git push origin master
 
 # deploy to tencentCloud
 cd public
-scp -r ./ root@118.24.78.115:/usr/share/nginx/html
+scp -r ./ tencent:/usr/share/nginx/html
 cd ..
