@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Moweiwei Blog</title>
-    <link>https://moweiwei.com/tags/</link>
+    <link>http://118.24.78.115/tags/</link>
     <description>Recent content in Tags on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://moweiwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://118.24.78.115/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

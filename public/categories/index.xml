@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Moweiwei Blog</title>
-    <link>https://moweiwei.com/categories/</link>
+    <link>http://118.24.78.115/categories/</link>
     <description>Recent content in Categories on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://moweiwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://118.24.78.115/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LIFE</title>
-      <link>https://moweiwei.com/categories/life/</link>
+      <link>http://118.24.78.115/categories/life/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://moweiwei.com/categories/life/</guid>
+      <guid>http://118.24.78.115/categories/life/</guid>
       <description></description>
     </item>
     
