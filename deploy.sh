@@ -2,6 +2,7 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+rm -rf public
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
@@ -21,6 +22,6 @@ git commit -m "$msg"
 git push origin master
 
 # deploy to tencentCloud
-cd public
+cd publics
 scp -r ./ tencent:/usr/share/nginx/html
 cd ..
