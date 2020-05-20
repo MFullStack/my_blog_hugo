@@ -1,78 +1,119 @@
-baseURL = "http://118.24.78.115"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
-title = "Never Give Up"                    # site title  # 网站标题
-theme = "zozo"
-hasCJKLanguage = true                # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-summaryLength = 100
-paginate = 4                         # shows the number of articles  # 首页显示文章数量
-enableEmoji = true
-googleAnalytics = ""                 # your google analytics id
-disqusShortname = ""                 # your discuss shortname
+baseurl = "http://118.24.78.115"
+title = "Moweiwei Blog"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+googleAnalytics = ""
+preserveTaxonomyNames = true
+paginate = 5 #frontpage pagination
+hasCJKLanguage = true
 
-[author]                             # essential                     # 必需
-  name = "Zeuk"
-
-[blackfriday]
-  smartypants = false
-
-[[menu.main]]                        # config your menu  # 配置菜单
-  name = "首页"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "归档"
-  weight = 20
-  identifier = "archive"
-  url = "/posts/"
-[[menu.main]]
-  name = "标签"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "分类"
-  weight = 40
-  identifier = "categories"
-  url = "/categories/"
-[[menu.main]]
-  name = "关于"
-  weight = 50
-  identifier = "about"
-  url = "/about/about"
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  subTitle = ""                                       # site's subTitle  # 网站二级标题
-  keywords = ["Hugo", "theme", "blog", "moweiwei", "mww"]                                  # site's keywords  # 网站关键字
-  description = "moweiwei blog."                        # site's description  # 网站描述
+  header_image = "img/home-bg-sailboat-compressor.jpg"
+  SEOTitle = "莫伟伟的博客 | Moweiwei Blog"
+  description = "莫伟伟，程序员, 开源爱好者，生活探险家 | 这里是 莫伟伟 的博客，与你一起发现更大的世界。"
+  keyword = "莫伟伟, moweiwei, Moweiwei, , 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
+  slogan = "路在脚下，心向远方"
 
-# mathjax
-  enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
+  image_404 = "img/404-bg.jpg"
+  title_404 = "你来到了没有知识的荒原 :("
+  omit_categories = false
 
-  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
+  # leancloud storage for page view counter
+  page_view_conter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
 
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-[params.valine]
-  enable = false
-  appId = ""
-  appKey = ""
-  placeholder = " "
-  visitor = true
+  # algolia site search
+  algolia_search = true
+  algolia_appId = ""
+  algolia_indexName = ""
+  algolia_apiKey = ""
 
-[social]
-  github = "https://github.com/moweiwei?tab=repositories"
+  # Sidebar settings
+  sidebar_about_description = "Front-End Developer"
+  sidebar_avatar = "img/moweiwei.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
-[taxonomies]
-  category = "categories"
-  tag = "tags"
+  featured_tags = true
+  featured_condition_size = 1
 
-[params.counter.busuanzi]
-  enable = true
+  # Baidu Analytics
+  ba_track_id = ""
 
-[highlighting]
-  pygmentsUseClassic       = true
-  pygmentsCodeFences       = true
-  pygmentsStyle            = "monokai"
+  # We need a proxy to access Disqus api in China
+  # Follow https://github.com/zhaohuabing/disqus-php-api to set up your own disqus proxy
+  disqus_proxy = ""
+  disqus_site = ""
+
+  #Enable wechat pay & alipay to allow readers send reward money if they like the articles
+  reward = false
+  # reward_guide = "如果这篇文章对你有用,请随意打赏"
+
+  #friends = true
+  bookmarks = false
+  about_me = true
+
+  # Include any custom CSS and/or JS files, url or relative to /static folder
+  #custom_css = ["css/lightbox.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", "css/main.css"]
+  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
+
+  [params.social]
+  rss            = true
+  email          = "moweiwei6@gmail.com"
+  #facebook      = "full profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  #twitter       = "full profile url in twitter"
+  #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+  #stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
+  #instagram     = "full profile url in instagram"
+  github         = "https://github.com/moweiwei"
+  #wechat         = "your wechat qr code image"
+  #medium         = "full profile url in medium"
+  #pinterest     = "full profile url in pinterest"
+  #reddit        = "full profile url in reddit"
+  #gitlab        = "full profile url in gitlab"
+  #mastodon      = "full profile url in mastodon"
+  #keybase       = "full profile url in keybase"
+  #xing          = "https://www.xing.com/profile/yourxingid"
+  #git           = "full profile url for git user"
+
+  [[params.bookmark_link]]
+  title =  "Martin Fowler"
+  href =  "https://martinfowler.com"
+  [[params.bookmark_link]]
+  title = "ServiceMesher"
+  href =  "http://www.servicemesher.com"
+  [[params.bookmark_link]]
+  title =  "Pxhere"
+  href = "https://pxhere.com"
+  [[params.bookmark_link]]
+  title = "unsplash"
+  href = "https://unsplash.com"
+
+  [[params.addtional_menus]]
+  title =  "BOOKS"
+  href =  "/top/books/"
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/top/about/"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
