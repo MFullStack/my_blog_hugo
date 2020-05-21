@@ -22,6 +22,6 @@ git commit -m "$msg"
 git push origin master
 
 # deploy to tencentCloud
-cd publics
+cd public
 scp -r ./ tencent:/usr/share/nginx/html
 cd ..

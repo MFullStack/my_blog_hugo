@@ -15,7 +15,7 @@ home = ["HTML", "RSS", "Algolia"]
 [params]
   header_image = "http://qam8kfig1.bkt.clouddn.com/home-bg-sailboat.jpg"
   SEOTitle = "莫伟伟的博客 | Moweiwei Blog"
-  description = "莫伟伟，程序员, 开源爱好者，生活探险家 | 这里是 莫伟伟 的博客，与你一起发现更大的世界。"
+  description = "莫伟伟, 程序员, 前端开发工程师, 猫控 | 这里是 莫伟伟 的博客。"
   keyword = "莫伟伟, moweiwei, Moweiwei, , 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
   slogan = "路在脚下，心向远方"
 
