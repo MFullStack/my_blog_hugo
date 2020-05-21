@@ -1,5 +1,5 @@
 ---
-title:       "Title"
+title:       "Javascript 设计模式-策略模式"
 subtitle:    ""
 description: ""
 date:        2020-05-20
@@ -9,6 +9,8 @@ tags:
     - JS
 categories:  [ TECH ]
 URL:         "/2020/05/21/"
+draft: true
 ---
 
-# Title
+# Javascript 设计模式-策略模式
+
