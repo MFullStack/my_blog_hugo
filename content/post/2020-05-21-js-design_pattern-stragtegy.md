@@ -1,8 +1,8 @@
 ---
 title: "Javascript 设计模式-策略模式"
-subtitle: ""
+subtitle: "策略模式"
 description: ""
-date: 2020-05-20
+date: 2020-05-24
 author:      "莫伟伟"
 image: ""
 tags:

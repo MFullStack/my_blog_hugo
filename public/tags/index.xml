@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://118.24.78.115/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>JS</title>
       <link>http://118.24.78.115/tags/js/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://118.24.78.115/tags/js/</guid>
       <description></description>
@@ -23,18 +23,9 @@
     <item>
       <title>JS设计模式</title>
       <link>http://118.24.78.115/tags/js%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://118.24.78.115/tags/js%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Meow</title>
-      <link>http://118.24.78.115/tags/meow/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://118.24.78.115/tags/meow/</guid>
       <description></description>
     </item>
     
@@ -44,6 +35,15 @@
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://118.24.78.115/tags/photos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>喵~</title>
+      <link>http://118.24.78.115/tags/%E5%96%B5~/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://118.24.78.115/tags/%E5%96%B5~/</guid>
       <description></description>
     </item>
     

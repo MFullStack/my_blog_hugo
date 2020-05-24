@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://118.24.78.115/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TECH</title>
+      <link>http://118.24.78.115/categories/tech/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://118.24.78.115/categories/tech/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>LIFE</title>
@@ -26,15 +35,6 @@
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://118.24.78.115/categories/meow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TECH</title>
-      <link>http://118.24.78.115/categories/tech/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://118.24.78.115/categories/tech/</guid>
       <description></description>
     </item>
     
