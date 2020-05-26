@@ -19,7 +19,7 @@ home = ["HTML", "RSS", "Algolia"]
   keyword = "莫伟伟, moweiwei, Moweiwei, , 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
   slogan = "路在脚下，心向远方"
 
-  image_404 = "img/404-bg.jpg"
+  image_404 = "img/404-bg.JPG"
   title_404 = "你来到了没有知识的荒原 :("
   omit_categories = false
 
