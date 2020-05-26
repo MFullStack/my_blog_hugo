@@ -1,7 +1,4 @@
-Blog by Moweiwei
 
-```
-hugo new posts/my-first-post.md
-```
+Blog: [http://moweiwei.com](http://moweiwei.com)
 
 Publish with Hugo
