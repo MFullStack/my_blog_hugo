@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Moweiwei Blog</title>
-    <link>http://118.24.78.115/categories/</link>
+    <link>http://moweiwei.com/categories/</link>
     <description>Recent content in Categories on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://118.24.78.115/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://moweiwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TECH</title>
-      <link>http://118.24.78.115/categories/tech/</link>
+      <link>http://moweiwei.com/categories/tech/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/categories/tech/</guid>
+      <guid>http://moweiwei.com/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MEOW</title>
-      <link>http://118.24.78.115/categories/meow/</link>
+      <link>http://moweiwei.com/categories/meow/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/categories/meow/</guid>
+      <guid>http://moweiwei.com/categories/meow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LIFE</title>
-      <link>http://118.24.78.115/categories/life/</link>
+      <link>http://moweiwei.com/categories/life/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/categories/life/</guid>
+      <guid>http://moweiwei.com/categories/life/</guid>
       <description></description>
     </item>
     

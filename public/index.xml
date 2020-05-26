@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Moweiwei Blog</title>
-    <link>http://118.24.78.115/</link>
+    <link>http://moweiwei.com/</link>
     <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://118.24.78.115/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Javascript 设计模式-策略模式</title>
-      <link>http://118.24.78.115/2020/05/21/</link>
+      <link>http://moweiwei.com/2020/05/21/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/2020/05/21/</guid>
+      <guid>http://moweiwei.com/2020/05/21/</guid>
       <description>Javascript 设计模式-策略模式 设计模式就是开发过程中面对一些问题、场景时，可以复用的更好的解决方案。 策略模式 定义：某个功能有多种方案可以选择，我们定义</description>
     </item>
     
     <item>
       <title>喵 ~</title>
-      <link>http://118.24.78.115/2020/05/21/meow/</link>
+      <link>http://moweiwei.com/2020/05/21/meow/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/2020/05/21/meow/</guid>
+      <guid>http://moweiwei.com/2020/05/21/meow/</guid>
       <description>The world of meow ~</description>
     </item>
     
     <item>
       <title>Phuket Tour</title>
-      <link>http://118.24.78.115/post/2020-05-20-phuket/</link>
+      <link>http://moweiwei.com/post/2020-05-20-phuket/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/post/2020-05-20-phuket/</guid>
+      <guid>http://moweiwei.com/post/2020-05-20-phuket/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bangkok</title>
-      <link>http://118.24.78.115/post/2020-05-25-bangkok/</link>
+      <link>http://moweiwei.com/post/2020-05-25-bangkok/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/post/2020-05-25-bangkok/</guid>
+      <guid>http://moweiwei.com/post/2020-05-25-bangkok/</guid>
       <description>Bangkok</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://118.24.78.115/search/placeholder/</link>
+      <link>http://moweiwei.com/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/search/placeholder/</guid>
+      <guid>http://moweiwei.com/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://118.24.78.115/top/about/</link>
+      <link>http://moweiwei.com/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/top/about/</guid>
+      <guid>http://moweiwei.com/top/about/</guid>
       <description> Mo Weiwei is an Front-end Engineer.
 Links  Gmail: moweiei6@gmail.com Github: https://github.com/moweiwei Blog: http://moweiwei.com  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://118.24.78.115/top/books/</link>
+      <link>http://moweiwei.com/top/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://118.24.78.115/top/books/</guid>
+      <guid>http://moweiwei.com/top/books/</guid>
       <description></description>
     </item>
     
