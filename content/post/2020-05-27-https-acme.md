@@ -122,8 +122,8 @@ server {
 
 ## 6. 重启 nginx
 
-重启后，博客即可以 https 访问。若地址栏左边没有安全锁，而是不安全的感叹号，可能原因是网站中外链，如cdn等，使用了http，替换为https即可。
-
 ```sh
 service nginx force-reload
 ```
+
+重启后，博客即可以 https 访问。若地址栏左边没有安全锁，而是不安全的感叹号，可能原因是网站中外链，如cdn等，使用了http，替换为https即可。
