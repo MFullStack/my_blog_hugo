@@ -4,7 +4,7 @@ subtitle:    "centos7"
 description: ""
 date:        2020-05-26
 author:      "莫伟伟"
-image:       "http://img.moweiwei.com/Bangkok15.jpg"
+image:       "https://img.moweiwei.com/Bangkok15.jpg"
 tags:
     - nginx
 categories:  [ TECH ]
@@ -42,7 +42,7 @@ sudo systemctl start nginx
 sudo systemctl status nginx
 ```
 
-6、验证 Nginx 是否成功启动，可以在浏览器中打开 <code>http://YOUR_IP</code>，您将看到默认的 Nginx 欢迎页面
+6、验证 Nginx 是否成功启动，可以在浏览器中打开 <code>https://YOUR_IP</code>，您将看到默认的 Nginx 欢迎页面
 
 ## 通过 systemctl 管理 Nginx
 

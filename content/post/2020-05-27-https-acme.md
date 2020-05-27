@@ -4,7 +4,7 @@ subtitle:    "let's encrypt 和 acme.sh"
 description: "acme.sh 实现了 acme 协议, 可以从 letsencrypt 生成免费的证书."
 date:        2020-05-27
 author:      "莫伟伟"
-image:       "http://img.moweiwei.com/Bangkok9.jpg"
+image:       "https://img.moweiwei.com/Bangkok9.jpg"
 tags:
     - https
 categories:  [ TECH ]

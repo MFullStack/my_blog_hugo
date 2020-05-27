@@ -1,4 +1,4 @@
-baseurl = "http://moweiwei.com"
+baseurl = "https://moweiwei.com"
 title = "Moweiwei Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
@@ -13,7 +13,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "http://img.moweiwei.com/home-bg-sailboat.jpg"
+  header_image = "https://img.moweiwei.com/home-bg-sailboat.jpg"
   SEOTitle = "莫伟伟的博客 | Moweiwei Blog"
   description = "莫伟伟, 程序员, 前端开发工程师, 猫控 | 这里是 莫伟伟 的博客。"
   keyword = "莫伟伟, moweiwei, Moweiwei, , 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
@@ -36,7 +36,7 @@ home = ["HTML", "RSS", "Algolia"]
 
   # Sidebar settings
   sidebar_about_description = "Front-End Developer"
-  sidebar_avatar = "http://img.moweiwei.com/moweiwei-sandbeach.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "https://img.moweiwei.com/moweiwei-sandbeach.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true
   featured_condition_size = 0
@@ -84,9 +84,6 @@ home = ["HTML", "RSS", "Algolia"]
   [[params.bookmark_link]]
   title =  "Martin Fowler"
   href =  "https://martinfowler.com"
-  [[params.bookmark_link]]
-  title = "ServiceMesher"
-  href =  "http://www.servicemesher.com"
   [[params.bookmark_link]]
   title =  "Pxhere"
   href = "https://pxhere.com"

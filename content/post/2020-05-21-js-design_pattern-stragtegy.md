@@ -11,7 +11,7 @@ tags:
 categories: [TECH]
 categories_weight: 44
 URL: "/2020/05/21/"
-image:       "http://img.moweiwei.com/Phuket1.JPG"
+image:       "https://img.moweiwei.com/Phuket1.JPG"
 ---
 
 # Javascript 设计模式-策略模式
