@@ -6,10 +6,19 @@
     <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS Install Nginx</title>
+      <link>http://moweiwei.com/2020/05/27/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://moweiwei.com/2020/05/27/</guid>
+      <description>CentOS Install Nginx 1、EPEL 仓库中有 Nginx 的安装包。如果你还没有安装过 EPEL，可以通过运行下面的命令来完成安装: sudo yum install epel-release 2、安装 Nginx sudo yum install nginx 3、设置 Nginx 开机</description>
+    </item>
     
     <item>
       <title>Javascript 设计模式-策略模式</title>
