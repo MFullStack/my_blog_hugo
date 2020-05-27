@@ -2,13 +2,12 @@
 title:       "CentOS Install Nginx"
 subtitle:    "centos7"
 description: ""
-date:        2020-05-27
+date:        2020-05-26
 author:      "莫伟伟"
 image:       "http://img.moweiwei.com/Bangkok15.jpg"
 tags:
     - nginx
 categories:  [ TECH ]
-URL:         "/2020/05/27/"
 ---
 
 ## CentOS Install Nginx

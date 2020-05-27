@@ -2,13 +2,12 @@
 title:       "给博客添加 https 证书并自动更新"
 subtitle:    "let's encrypt 和 acme.sh"
 description: "acme.sh 实现了 acme 协议, 可以从 letsencrypt 生成免费的证书."
-date:        2020-05-28
+date:        2020-05-27
 author:      "莫伟伟"
-image:       ""
+image:       "http://img.moweiwei.com/Bangkok9.jpg"
 tags:
-    - JS
+    - https
 categories:  [ TECH ]
-URL:         "/2020/05/21/"
 ---
 
 # 给博客添加 https 证书并自动更新
@@ -17,7 +16,7 @@ URL:         "/2020/05/21/"
 
 ## 1. 安装 acme.sh
 
-````
+````sh
 curl  https://get.acme.sh | sh
 ````
 
@@ -25,7 +24,7 @@ curl  https://get.acme.sh | sh
 
 创建 bash 的 alias：
 
-```
+```sh
 alias acme.sh=~/.acme.sh/acme.sh
 ```
 
@@ -33,13 +32,13 @@ alias acme.sh=~/.acme.sh/acme.sh
 
 只需要指定域名, 并指定域名所在的网站根目录. 我的域名是<code>moweiwei.com</code>. <code>/usr/share/nginx/html</code> 是我放博客的 nginx 目录。
 
-````
+````sh
 acme.sh  --issue  -d moweiwei.com -d www.moweiwei.com  --webroot /usr/share/nginx/html
 ````
 
 出现如下信息即生成证书成功：
 
-```
+```sh
 [2020年 05月 27日 星期三 09:13:16 CST] Your cert is in  /root/.acme.sh/moweiwei.com/moweiwei.com.cer
 [2020年 05月 27日 星期三 09:13:16 CST] Your cert key is in  /root/.acme.sh/moweiwei.com/moweiwei.com.key
 [2020年 05月 27日 星期三 09:13:16 CST] The intermediate CA cert is in  /root/.acme.sh/moweiwei.com/ca.cer
@@ -50,7 +49,7 @@ acme.sh  --issue  -d moweiwei.com -d www.moweiwei.com  --webroot /usr/share/ngin
 
 默认生成的证书都放在安装目录下: ~/.acme.sh/. 不直接使用该处的证书。详情参考 acme.sh. Copy到其他目录使用，新建目录: <code>/data/nginx/ssl</code>。
 
-```
+```sh
 acme.sh --installcert -d moweiwei.com \
     --keypath       /data/nginx/ssl/moweiwei.com.key  \
     --fullchainpath /data/nginx/ssl/moweiwei.com.key.pem \
@@ -61,7 +60,7 @@ acme.sh --installcert -d moweiwei.com \
 
 ## 4. 开启 acme.sh 自动升级
 
-```
+```sh
 acme.sh  --upgrade  --auto-upgrade
 ```
 
@@ -69,7 +68,7 @@ acme.sh  --upgrade  --auto-upgrade
 
 修改 <code>/etc/nginx/nginx.conf</code> nginx配置如下，添加443端口监听和 ssl信息，之前生成的证书，80端口添加重定向到 https。
 
-```
+```sh
 server {
         listen       80 default_server;
         listen       [::]:80 default_server;
@@ -124,6 +123,7 @@ server {
 ## 重启 nginx
 
 重启后，博客即可以 https 访问。
-```
+
+```sh
 service nginx force-reload
 ```

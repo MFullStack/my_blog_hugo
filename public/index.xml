@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>CentOS Install Nginx</title>
-      <link>http://moweiwei.com/2020/05/27/</link>
+      <title>给博客添加 https 证书并自动更新</title>
+      <link>http://moweiwei.com/post/2020-05-27-https-acme/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://moweiwei.com/2020/05/27/</guid>
+      <guid>http://moweiwei.com/post/2020-05-27-https-acme/</guid>
+      <description>给博客添加 https 证书并自动更新 acme.sh 实现了 acme 协议, 可以从 letsencrypt 生成免费的证书. 我的博客使用的是 nginx 服务器。其他参考 acme.sh. 1. 安装 acme.sh curl https://get.acme.sh | sh 出现 Install success! 即安装成功。 创</description>
+    </item>
+    
+    <item>
+      <title>CentOS Install Nginx</title>
+      <link>http://moweiwei.com/post/2020-05-27-centos-install-nginx/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://moweiwei.com/post/2020-05-27-centos-install-nginx/</guid>
       <description>CentOS Install Nginx 1、EPEL 仓库中有 Nginx 的安装包。如果你还没有安装过 EPEL，可以通过运行下面的命令来完成安装: sudo yum install epel-release 2、安装 Nginx sudo yum install nginx 3、设置 Nginx 开机</description>
     </item>
     
