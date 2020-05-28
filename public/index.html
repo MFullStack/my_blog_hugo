@@ -51,8 +51,7 @@
     <link rel="stylesheet" href="/css/zanshang.css">
 
     
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     
     
@@ -143,9 +142,18 @@
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
         $(document).ready(function () {
-            document.querySelector('.post-heading').classList.add('post-fade-in');
-            document.querySelector('.site-heading').classList.add('post-fade-in');
-            document.querySelector('.post-container').classList.add('post-container-fade-in');
+            var $post_heading = document.querySelector('.post-heading');
+            var $post_container = document.querySelector('.post-container');
+            var $site_heading = document.querySelector('.site-heading');
+            if($post_heading) {
+                $post_heading.classList.add('post-fade-in');
+            }
+            if($site_heading) {
+                $site_heading.classList.add('post-fade-in');
+            }
+            if($post_container) {
+                $post_container.classList.add('post-container-fade-in');
+            }
         })
     </script>
 </head>
