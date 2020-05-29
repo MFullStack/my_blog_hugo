@@ -6,10 +6,19 @@
     <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes 中的 port、targetPort、nodePort</title>
+      <link>https://moweiwei.com/2020/05/28/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://moweiwei.com/2020/05/28/</guid>
+      <description>Kubernetes 中的 port、targetPort、nodePort Service 中的三个端口，一直搞不清楚，如创建如下 service： apiVersion: v1 kind: Service metadata: labels: name: app1 name: app1 namespace: default spec: type: NodePort</description>
+    </item>
     
     <item>
       <title>给博客添加 https 证书并自动更新</title>
