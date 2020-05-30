@@ -4,7 +4,7 @@ subtitle:    ""
 description: "k8s笔记"
 date:        2020-05-30
 author:      "莫伟伟"
-image:       "https://img.moweiwei.com/k8s-bg.png"
+image:       "https://img.moweiwei.com/k8s-bg-gray.png"
 tags:
     - kubernetes
     - docker
