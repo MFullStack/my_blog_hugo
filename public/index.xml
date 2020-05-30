@@ -6,10 +6,19 @@
     <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Training Kubernetes</title>
+      <link>https://moweiwei.com/2020/05/30/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://moweiwei.com/2020/05/30/</guid>
+      <description>Training Kubernetes 什么是 Linux 容器? Linux 容器是与系统其他部分隔离开的一系列进程。Linux Container主要由Namespace、Cgroup、UnionF</description>
+    </item>
     
     <item>
       <title>Kubernetes 中的 port、targetPort、nodePort</title>
