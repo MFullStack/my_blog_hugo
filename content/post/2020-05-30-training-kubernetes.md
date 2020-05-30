@@ -14,7 +14,9 @@ URL:         "/2020/05/30/"
 
 # Training Kubernetes
 
-## 什么是 Linux 容器?
+## 2020.5.30
+
+### 什么是 Linux 容器?
 
 Linux 容器是与系统其他部分隔离开的一系列进程。Linux Container主要由Namespace、Cgroup、UnionFS（联合文件系统）。
 
@@ -30,7 +32,7 @@ Linux Container:
 
 ![](https://img.moweiwei.com/linux-container.png)
 
-## 容器和虚拟机有何区别？
+### 容器和虚拟机有何区别？
 
 容器虚拟化的是操作系统而不是硬件，容器之间是共享同一套操作系统资源的。虚拟机技术是虚拟出一套硬件后，在其上运行一个完整操作系统。因此容器的隔离级别会稍低一些。
 
@@ -40,15 +42,15 @@ Linux Container:
 
 ![](https://img.moweiwei.com/vm-vs-container.jpg)
 
-## 虚拟化是为了解决什么问题？
+### 虚拟化是为了解决什么问题？
 
 资源隔离/资源限制
 
-## Docker 和容器技术有什么关系？
+### Docker 和容器技术有什么关系？
 
 当前，docker几乎是容器的代名词，很多人以为docker就是容器。其实，这是错误的认识，除了docker 还有coreos。
 
-## Docker 的架构和概念空间是怎么样的？
+### Docker 的架构和概念空间是怎么样的？
 
 ![架构](https://img.moweiwei.com/docker-architecture.png)
 
@@ -57,47 +59,47 @@ Docker 三个核心概念：
 - Docker 容器（Container）
 - Docker 仓库（Repository）
 
-## 什么是所谓的容器安全技术？
+### 什么是所谓的容器安全技术？
 
 Kata-Container
 
-## Docker 的网络模型
+### Docker 的网络模型
 
 https://docs.docker.com/network/
 
-## Docker 的存储模型
+### Docker 的存储模型
 
 https://docs.docker.com/storage/
 
-## 什么是 K8S？
+### 什么是 K8S？
 
 容器的调度框架
 
-## K8S 解决什么问题？
+### K8S 解决什么问题？
 
 快速缩放、自愈。
 
-## K8S 不解决什么问题？
+### K8S 不解决什么问题？
 
 用户管理、限流熔断、监控审计
 
-## K8S 的模块结构是什么样的？
+### K8S 的模块结构是什么样的？
 
 ![](https://img.moweiwei.com/k8s-architecture.png)
 
-## K8S 有哪些竞品？
+### K8S 有哪些竞品？
 
 OpenShift/VMware/KubeSphere
 
-## 产品会基于 K8S 做哪些改良？
+### 产品会基于 K8S 做哪些改良？
 
 界面/中间件/云支持
 
-## 怎么部署出一个 K8S 集群？
+### 怎么部署出一个 K8S 集群？
 
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/
 
-## 什么是 Pod？
+### 什么是 Pod？
 
 K8S中创建、部署的最小单元
 
