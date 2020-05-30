@@ -1,6 +1,6 @@
 ---
 title:       "Training Kubernetes"
-subtitle:    ""
+subtitle:    "Training"
 description: "k8s笔记"
 date:        2020-05-30
 author:      "莫伟伟"
