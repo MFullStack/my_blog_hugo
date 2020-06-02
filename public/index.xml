@@ -6,10 +6,19 @@
     <description>Recent content on Moweiwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://moweiwei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes WebSocket 实现 Pod Web Terminal</title>
+      <link>https://moweiwei.com/post/2020-06-02-k8s-pod-web-shell/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://moweiwei.com/post/2020-06-02-k8s-pod-web-shell/</guid>
+      <description>Kubernetes WebSocket 实现 Pod Web Terminal WebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信。WebSocket使得客户端和服务器之间的数据交换变</description>
+    </item>
     
     <item>
       <title>Training Kubernetes</title>
