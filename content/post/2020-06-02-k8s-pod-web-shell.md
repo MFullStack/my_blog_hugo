@@ -180,7 +180,7 @@ const Base64ChannelWebSocketProtocol = "base64.channel.k8s.io"
 
 本文使用 `base64.channel.k8s.io` 子协议，协议实际上将作为header “Sec-WebSocket-Protocol : base64.channel.k8s.io“传输。前端具体代码如下。
 
-## JavaScript 连接 Kubernetes Websocket 代码段
+## 4. JavaScript 连接 Kubernetes Websocket 主要代码段
 
 Terminal 部分代码：
 
