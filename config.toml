@@ -6,7 +6,7 @@ languageCode = "en-us"
 disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 5 #frontpage pagination
+paginate = 6 #frontpage pagination
 hasCJKLanguage = true
 
 [outputs]
@@ -16,7 +16,7 @@ home = ["HTML", "RSS", "Algolia"]
   header_image = "https://img.moweiwei.com/home-bg-sailboat.jpg"
   SEOTitle = "莫伟伟的博客 | Moweiwei Blog"
   description = "莫伟伟, 程序员, 前端开发工程师, 猫控 | 这里是 莫伟伟 的博客。"
-  keyword = "莫伟伟, moweiwei, Moweiwei, , 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
+  keyword = "莫伟伟, moweiwei, Moweiwei, 莫伟伟的网络日志, 莫伟伟的博客, Moweiwei Blog, 博客, 个人网站, 互联网, Web, 云原生, Kubernetes, 前端"
   slogan = "路在脚下，心向远方"
 
   image_404 = "img/404-bg.JPG"
