@@ -18,6 +18,7 @@
                {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
                     <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
                         {{ $name }}
+                        <span class="tags-count">{{len $taxonomy.Pages}}</span>
                     </a>
                {{ end }}
             {{ end }}

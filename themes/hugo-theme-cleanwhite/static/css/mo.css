@@ -38,3 +38,22 @@
   -webkit-transition: all .5s ease-out;
   -ms-transition: all .5s ease-out;
 }
+
+.pager .previous > a:hover, .pager .next > a:hover {
+  transition: all .5s ease-out;
+}
+.pager .previous > a:hover {
+  transform: translateX(-4px);
+}
+.pager .next > a:hover {
+  transform: translateX(4px);
+}
+
+.tags .tags-count {
+  font-size: 12px;
+  position: relative;
+  top: -4px;
+  right: -1px;
+  color: #0085a1;
+  opacity:0.6;
+}
