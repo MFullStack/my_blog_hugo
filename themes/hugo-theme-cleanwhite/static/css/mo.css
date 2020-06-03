@@ -1,0 +1,40 @@
+.post-container img {
+  max-width: 60% !important;
+}
+
+.pre {
+  padding: 0 !important;
+}
+
+/* highlightjs-line-numbers */
+.hljs-ln td {
+  padding-left: 10px !important;
+}
+
+.hljs-ln-numbers {
+  color: #75715e;
+}
+
+#busuanzi_container_site_pv, #busuanzi_container_site_uv {
+  text-align: center;
+  color: #ddd !important;
+  font: 12px "Oswald-Regular" !important;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0;
+}
+.intro-header .post-heading,
+.intro-header .page-heading {
+  padding: 80px 0 40px;
+}
+
+/* transform */
+.tags a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+}
