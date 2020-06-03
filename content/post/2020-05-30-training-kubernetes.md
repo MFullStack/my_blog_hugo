@@ -14,6 +14,13 @@ URL:         "/2020/05/30/"
 
 # Training Kubernetes
 
+## 基本技能
+
+- vim基础操作--编辑、修改、保存文件
+- 网络基础知识--网段cidr、vlan、vxlan、配置linux网卡等等
+- 基础的linux只是--权限、文件系统、服务
+- systemd的基础操作--重启、关闭、启动、重载、查看system的服务
+
 ## 2020.5.30
 
 ### 什么是 Linux 容器?
