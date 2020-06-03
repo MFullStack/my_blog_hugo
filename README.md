@@ -1,4 +1,8 @@
 
-Blog: [https://moweiwei.com](http://moweiwei.com)
+Moweiwei Blog:
 
-Publish with Hugo
+[https://moweiwei.com](https://moweiwei.com)
+
+![home](/static/img/blog.png)
+
+![home](/static/img/post.png)
