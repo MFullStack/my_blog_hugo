@@ -6,7 +6,7 @@ languageCode = "en-us"
 disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 6 #frontpage pagination
+paginate = 5 #frontpage pagination
 hasCJKLanguage = true
 
 [outputs]
@@ -50,8 +50,8 @@ home = ["HTML", "RSS", "Algolia"]
   disqus_site = ""
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles
-  reward = false
-  # reward_guide = "如果这篇文章对你有用,请随意打赏"
+  reward = true
+  reward_guide = "如果这篇文章对你有用,请随意打赏"
 
   #friends = true
   bookmarks = false
