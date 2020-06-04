@@ -1,3 +1,8 @@
+a:hover, .post-preview>a:hover, .post-content-preview:hover  {
+  color: #0085a1;
+  transition: all .5s ease-out;
+}
+
 .post-container img {
   max-width: 60% !important;
 }
@@ -75,7 +80,8 @@
 }
 .archive-list li:hover {
   color: #0085a1;
-  border-left: 2px solid #0085a1;
+  border-left: 4px solid #0085a1;
+  transition: all .5s ease-out;
 }
 .post-container .archive-year {
   margin-top: 10px;
