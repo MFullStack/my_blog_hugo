@@ -1,4 +1,7 @@
-a:hover, .post-preview>a:hover, .post-content-preview:hover  {
+a:hover,
+.post-preview>a:hover,
+.post-content-preview:hover,
+.navbar-collapse .navbar-nav > li >a:hover  {
   color: #0085a1;
   transition: all .5s ease-out;
 }
