@@ -57,3 +57,7 @@
   color: #0085a1;
   opacity:0.6;
 }
+
+.archive-list > li {
+  list-style: none;
+}

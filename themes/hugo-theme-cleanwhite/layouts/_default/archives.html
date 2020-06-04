@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="
+          col-lg-11 col-lg-offset-1
+          col-md-10 col-md-offset-1
+          post-container post-container-fade-in">
+          {{ range (.Site.RegularPages.GroupByDate "2006") }}
+            <h3>{{ .Key }}</h3>
+            <ul class="archive-list">
+              {{ range (where .Pages "Type" "post") }}
+                  <li>
+                  <span class="archive-post-date">{{ .PublishDate.Format "01/02" }}</span>
+                  <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </li>
+              {{ end }}
+            </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
