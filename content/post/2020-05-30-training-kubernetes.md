@@ -9,7 +9,7 @@ tags:
     - kubernetes
     - docker
 categories:  [ TECH ]
-URL:         "/2020/05/30/"
+URL:         "/2020/05/30/training-k8s"
 ---
 
 # Training Kubernetes
@@ -18,8 +18,71 @@ URL:         "/2020/05/30/"
 
 - vim基础操作--编辑、修改、保存文件
 - 网络基础知识--网段cidr、vlan、vxlan、配置linux网卡等等
-- 基础的linux只是--权限、文件系统、服务
+- 基础的linux知识--权限、文件系统、服务
 - systemd的基础操作--重启、关闭、启动、重载、查看system的服务
+
+***
+
+### 1. 网段 cidr
+
+A级段 192.168.1.1/8 表示192.0.0.0-192.255.255.255
+
+对应子网掩码格式 192.168.1.1/255.0.0.0
+
+B级段 192.168.1.1/16 表示192.168.0.0-192.168.255.255
+
+对应子网掩码格式 192.168.1.1/255.255.0.0
+
+C级段 192.168.1.1/24 表示192.168.1.0-192.168.1.255
+
+对应子网掩码格式 192.168.1.1/255.255.255.0
+
+### 2. vlan
+
+- Virtual local area network， 虚拟局域网
+- VLAN的作用，主要是将一个大的广播域隔离开来，形成对个小的广播域，各个广播域内可以互通，广播域之间默认不能直接通讯。
+
+### 3. vxlan
+
+- Virtual eXtensible Local Area Network，虚拟可扩展的局域网
+- 它是一种 overlay 技术，通过三层的网络来搭建虚拟的二层网络。
+- vxlan 解决的问题：
+  - 虚拟化（虚拟机和容器）的兴起使得一个数据中心会有成千上万的机器需要通信，而传统的 VLAN 技术只能支持 4096 个网络上限，已经满足不了不断扩展的数据中心规模
+  - 越来越多的数据中心（尤其是公有云服务）需要提供多租户的功能，不同用户之间需要独立地分配 ip 和 MAC 地址，如何保证这个功能的扩展性和正确性也是一个待解决的问题
+  - 云计算业务对业务灵活性要求很高，虚拟机可能会大规模迁移，并保证网络一直可用，也就是大二层的概念。解决这个问题同时保证二层的广播域不会过分扩大，也是云计算网络的要求
+
+### 4. 配置linux网卡
+
+- 打开网卡配置文件(centos7.4)
+
+```sh
+vim /etc/sysconfig/network-scripts/ifcfg-ens34
+```
+
+- 配置文件
+
+```sh
+TYPE=Ethernet    # 网卡类型：为以太网
+PROXY_METHOD=none    # 代理方式：关闭状态
+BROWSER_ONLY=no      # 只是浏览器：否
+BOOTPROTO=dhcp  #设置网卡获得ip地址的方式，可能的选项为static(静态)，dhcp(dhcp协议)或bootp(bootp协议).
+DEFROUTE=yes        # 默认路由：是, 不明白的可以百度关键词 `默认路由`
+IPV4_FAILURE_FATAL=no     # 是不开启IPV4致命错误检测：否
+IPV6INIT=yes         # IPV6是否自动初始化: 是[不会有任何影响, 现在还没用到IPV6]
+IPV6_AUTOCONF=yes    # IPV6是否自动配置：是[不会有任何影响, 现在还没用到IPV6]
+IPV6_DEFROUTE=yes     # IPV6是否可以为默认路由：是[不会有任何影响, 现在还没用到IPV6]
+IPV6_FAILURE_FATAL=no     # 是不开启IPV6致命错误检测：否
+IPV6_ADDR_GEN_MODE=stable-privacy   # IPV6地址生成模型：stable-privacy [这只一种生成IPV6的策略]
+NAME=ens34     # 网卡物理设备名称
+UUID=8c75c2ba-d363-46d7-9a17-6719934267b7   # 通用唯一识别码，没事不要动它，否则你会后悔的。。
+DEVICE=ens34   # 网卡设备名称, 必须和 `NAME` 值一样
+ONBOOT=no #系统启动时是否设置此网络接口，设置为yes时，系统启动时激活此设备
+IPADDR=192.168.103.203   #网卡对应的ip地址
+PREFIX=24             # 子网 24就是255.255.255.0
+GATEWAY=192.168.103.1    #网关
+DNS1=114.114.114.114        # dns
+HWADDR=78:2B:CB:57:28:E5  # mac地址
+```
 
 ## 2020.5.30
 
@@ -118,3 +181,5 @@ https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
 
 - [99cloud/training-kubernets](https://github.com/99cloud/training-kubernetes/blob/master/doc/class-01-Kubernetes-Administration.md)
 - https://zhuanlan.zhihu.com/p/38533234
+- https://cizixs.com/2017/09/25/vxlan-protocol-introduction/
+- https://www.jianshu.com/p/c937278418f9
