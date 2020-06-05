@@ -1,15 +1,15 @@
 ---
 title:       "Kubernetes 常用命令"
 subtitle:    "常用命令汇总"
-description: ""
+description: "apt-get update -y"
 date:        2020-06-05
 author:      "莫伟伟"
-image:       ""https://img.moweiwei.com/k8s-bg-gray.png""
+image:       "https://img.moweiwei.com/k8s-bg-gray.png"
 tags:
     - kubernetes
     - command
 categories:  [ TECH ]
-URL:         "/2020/06/05/"
+URL:         "/2020/06/05/k8s-command"
 ---
 
 # Kubernetes 常用命令
