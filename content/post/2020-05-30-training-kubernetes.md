@@ -1,7 +1,7 @@
 ---
 title:       "Training Kubernetes"
 subtitle:    "Training"
-description: "k8s笔记"
+description: "k8s 学习笔记"
 date:        2020-05-30
 author:      "莫伟伟"
 image:       "https://img.moweiwei.com/k8s-bg-gray.png"
@@ -301,6 +301,7 @@ RoleBinding与ClusterRoleBinding：
 - 在命名空间中可以通过RoleBinding对象授予权限，而集群范围的权限授予则通过ClusterRoleBinding对象完成。
 
 https://jimmysong.io/kubernetes-handbook/concepts/serviceaccount.html
+
 https://jimmysong.io/kubernetes-handbook/concepts/rbac.html
 
 ***
