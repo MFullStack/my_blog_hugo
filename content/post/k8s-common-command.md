@@ -1,6 +1,6 @@
 ---
 title:       "Kubernetes 常用命令"
-subtitle:    "常用命令汇总"
+subtitle:    "k8s 常用命令汇总"
 description: "apt-get update -y"
 date:        2020-06-05
 author:      "莫伟伟"

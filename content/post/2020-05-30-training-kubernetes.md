@@ -104,6 +104,9 @@ Linux Container:
 
 ### 容器和虚拟机有何区别？
 
+- 原理
+- 应用场景
+
 容器虚拟化的是操作系统而不是硬件，容器之间是共享同一套操作系统资源的。虚拟机技术是虚拟出一套硬件后，在其上运行一个完整操作系统。因此容器的隔离级别会稍低一些。
 
 - 容器，它首先是一个相对独立的运行环境，在这一点类似于虚拟机，但是不像虚拟机那样彻底。
@@ -147,11 +150,16 @@ https://docs.docker.com/storage/
 
 ### K8S 解决什么问题？
 
-快速缩放、自愈。
+自动化编排：自愈，快速缩放，一键部署和升降级，备份恢复
 
 ### K8S 不解决什么问题？
 
-用户管理、限流熔断、监控审计
+- 用户管理
+- 限流熔断：istio
+- 监控审计：prometheus / grafana / alertmanager / elasticsearch / fluent / kibana
+- 用户界面
+- 中间件
+- 底层云平台支持
 
 ### K8S 的模块结构是什么样的？
 
@@ -175,6 +183,126 @@ K8S中创建、部署的最小单元
 
 https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
 
+## 2020.06.06
+
+### 什么是 YAML？
+
+- 写配置文件的语言
+- 大小写敏感、缩进表示层级、缩进用空格，不允许tab
+
+[https://www.ruanyifeng.com/blog/2016/07/yaml.html](https://www.ruanyifeng.com/blog/2016/07/yaml.html)
+
+### 什么是 Namespace & Quota？
+
+- 租户隔离
+- Quota：为 namespace中运行的 container 的总内存和 cpu 设置配额
+
+```sh
+# 创建一个 namespace
+kubectl create ns quota-mem-cpu-example
+
+# 为这个 namespace 限定配额
+kubectl apply -f https://k8s.io/examples/admin/resource/quota-mem-cpu.yaml -n quota-mem-cpu-example
+
+# 查看配额的详细信息
+kubectl get resourcequota mem-cpu-demo -n quota-mem-cpu-example -o yaml
+
+# 创建一个 pod，并限制它的资源使用
+kubectl apply -f https://k8s.io/examples/admin/resource/quota-mem-cpu-pod.yaml -n quota-mem-cpu-example
+
+# 确认 pod 已经启动
+kubectl get pod quota-mem-cpu-demo -n quota-mem-cpu-example
+
+# 再次查看配额信息，检查已用部分
+kubectl get resourcequota mem-cpu-demo -n quota-mem-cpu-example -o yaml
+
+# 尝试启动第二个 pod，因为配额原因，失败
+kubectl apply -f https://k8s.io/examples/admin/resource/quota-mem-cpu-pod-2.yaml -n quota-mem-cpu-example
+
+# Error from server (Forbidden): error when creating "examples/admin/resource/quota-mem-cpu-pod-2.yaml":pods "quota-mem-cpu-demo-2" is forbidden: exceeded quota: mem-cpu-demo, requested: requests.memory=700Mi,used: requests.memory=600Mi, limited: requests.memory=1Gi
+
+# 删除命名空间
+kubectl delete namespace quota-mem-cpu-example
+```
+
+### 什么是 Deployment & ReplicaSet？
+
+#### 1. Deployment
+
+- Deployment: 为 Pod 和 ReplicaSet 提供了声明式更新。
+- 一般用来部署 pod
+
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+#### ReplicaSet
+
+- 用来维护 Pod 数量，保证指定数量的 Pod 可用
+
+https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+
+### 什么是 Services？
+
+- 对外暴露一组 Pod 的抽象方法
+- service 为 一组 Pods提供自己的IP地址和一组Pod的单个DNS名称
+- 能够在 Pod 之间进行负载均衡
+- 服务发现，service 解析是通过 kube-dns 完成
+
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+### DeamonSet & StatefulSet
+
+#### 1. DeamonSet
+
+- DeamonSet 是在每个（或一些） node 上都运行 pod 的副本。
+- 典型应用场景：
+  - 每个节点上运行集群存储守护程序，例如：glusterd，ceph。
+  - 每个节点上都一个日志收集程序，如：fluentd or filebeat。
+  - 每个节点上运行一个监控守护进程，如 Prometheus Node Exporter 等
+
+https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+
+#### 2. StatefulSet
+
+- StatefulSet 是工作负载 API 对象
+- 管理一组Pod的部署和扩展，并保证 pod 顺序和唯一性。
+
+https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+
+### 什么是静态 Pod？
+
+- 静态 pod 由节点上的 kubelet daemon 直接管理。
+- 静态 pod 始终绑定到特定节点上的kubelet
+- API server 可见静态 pod，但是不能控制。
+
+https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
+
+### 什么是 K8S 的 3A？
+
+API Server是集群网关，是访问及管理资源对象的唯一入口
+客户端认证由API Server配置的一到多个认证插件完成(依次调用认证插件，直到其中一个插件可以识别请求者身份为止)
+
+认证过程：客户端 -> API Server -> 认证插件（Authentication） -> 授权插件（Authorization） -> 准入控制插件（AdmissionControl ） -> 写入成功， 即3A认证
+
+### 怎么配置 kubectl？
+
+### K8S 怎么保证网络安全？
+
+### 什么是用户和角色？
+
+- RBAC（Role-Based Access Control， 基于角色的访问可控制）
+- 一个角色包含了一套表示一组权限的规则
+- 角色可以由命名空间（namespace）内的Role对象定义
+- Kubernetes集群范围内有效的角色则通过ClusterRole对象实现
+
+RoleBinding与ClusterRoleBinding：
+
+- 角色绑定将一个角色中定义的各种权限授予一个或者一组用户。
+- 角色绑定包含了一组相关主体（即subject, 包括用户——User、用户组——Group、或者服务账户——Service Account）以及对被授予角色的引用。
+- 在命名空间中可以通过RoleBinding对象授予权限，而集群范围的权限授予则通过ClusterRoleBinding对象完成。
+
+https://jimmysong.io/kubernetes-handbook/concepts/serviceaccount.html
+https://jimmysong.io/kubernetes-handbook/concepts/rbac.html
+
 ***
 
 参考：
@@ -183,3 +311,4 @@ https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
 - https://zhuanlan.zhihu.com/p/38533234
 - https://cizixs.com/2017/09/25/vxlan-protocol-introduction/
 - https://www.jianshu.com/p/c937278418f9
+- https://pdf.us/2019/03/21/3061.html
