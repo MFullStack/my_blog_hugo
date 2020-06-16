@@ -9,6 +9,21 @@ preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
 
+[related]
+    threshold = 30
+    includeNewer = true
+    toLower = false
+
+    [[related.indices]]
+        name = "CurrentSection.Title"
+        weight = 75
+    [[related.indices]]
+        name = "date"
+        weight = 50
+    [[related.indices]]
+        name = "description"
+        weight = 25
+
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 

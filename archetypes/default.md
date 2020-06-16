@@ -2,13 +2,13 @@
 title:       "Title"
 subtitle:    ""
 description: ""
-date:        2020-05-20
+date:        {{ now.Format "2006-01-02" }}
 author:      "莫伟伟"
 image:       ""
 tags:
     - JS
 categories:  [ TECH ]
-URL:         "/2020/05/21/"
+URL:         {{ now.Format "/2006/01/02" }}
 ---
 
 # Title
